@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFast4Android</string>
+    <!-- MainActivity-->
+    <string name="title_name">DemoList</string>
+    <!-- -->
+    <string name="listViewAdapterBasic">listViewAdapterBasic</string>
+    <string name="listViewAdapterConvertView">listViewAdapterConvertView</string>
+    <string name="listViewAdapterViewHolder">listViewAdapterViewHolder</string>
+</resources>
