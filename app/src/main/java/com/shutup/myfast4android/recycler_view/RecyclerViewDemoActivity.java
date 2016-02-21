@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
+import com.shutup.myfast4android.BuildConfig;
 import com.shutup.myfast4android.R;
 
 import java.util.ArrayList;
@@ -33,7 +35,11 @@ public class RecyclerViewDemoActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         DividerLine dividerLine = new DividerLine(DividerLine.VERTICAL);
-        dividerLine.setSize(5);
+        if (BuildConfig.DEBUG)
+            Log.d("RecyclerViewDemoActivit", "getResources().getDimension(R.dimen.recyclerview_vertical_space):" + getResources().getDimension(R.dimen.recyclerview_vertical_space));
+        if (BuildConfig.DEBUG)
+            Log.d("RecyclerViewDemoActivit", "getResources().getDimensionPixelSize(R.dimen.recyclerview_vertical_space):" + getResources().getDimensionPixelSize(R.dimen.recyclerview_vertical_space));
+        dividerLine.setSize((int) getResources().getDimension(R.dimen.recyclerview_vertical_space));
         dividerLine.setColor(0xFFDDDDDD);
         recyclerView.addItemDecoration(dividerLine);
         recyclerView.setAdapter(new ItemArticleAdapter(data,this));

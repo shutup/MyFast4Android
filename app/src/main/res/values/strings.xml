@@ -6,4 +6,9 @@
     <string name="listViewAdapterBasic">listViewAdapterBasic</string>
     <string name="listViewAdapterConvertView">listViewAdapterConvertView</string>
     <string name="listViewAdapterViewHolder">listViewAdapterViewHolder</string>
+    <!-- CardViewDemo-->
+    <string name="Radius">Radius</string>
+    <string name="Elevation">Elevation</string>
+    <string name="Alpha">Alpha</string>
+    <string name="Background">Background</string>
 </resources>

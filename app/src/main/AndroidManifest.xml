@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".common.BaseActivity" />
         <activity android:name=".listview_adapter_demo.ListViewAdapterDemoActivity" />
-        <activity android:name=".recycler_view.RecyclerViewDemoActivity"></activity>
+        <activity android:name=".recycler_view.RecyclerViewDemoActivity" />
+        <activity android:name=".cardview.CardViewDemoActivity"></activity>
     </application>
 
 </manifest>
