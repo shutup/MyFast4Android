@@ -11,6 +11,7 @@ import com.shutup.myfast4android.R;
 import com.shutup.myfast4android.common.BaseActivity;
 import com.shutup.myfast4android.listview_adapter_demo.ListMenuAdapterUseViewHolder;
 import com.shutup.myfast4android.listview_adapter_demo.ListViewAdapterDemoActivity;
+import com.shutup.myfast4android.recycler_view.RecyclerViewDemoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,7 @@ public class MainActivity extends BaseActivity {
         data = new ArrayList<Menu>();
         data.add(new Menu("GreenDao Test",new Intent(this,MainActivity.class)));
         data.add(new Menu("ListView Adapter Test",new Intent(this,ListViewAdapterDemoActivity.class)));
+        data.add(new Menu("RecyclerView Text",new Intent(this, RecyclerViewDemoActivity.class)));
     }
 
 
