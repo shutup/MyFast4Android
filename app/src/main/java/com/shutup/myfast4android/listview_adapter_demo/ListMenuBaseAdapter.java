@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 
 import com.shutup.myfast4android.main_menu.Menu;
 
@@ -15,12 +16,20 @@ import java.util.List;
  */
 public class ListMenuBaseAdapter extends BaseAdapter {
     protected List<Menu> data;
-    private Context mContext;
+    protected Context mContext;
     protected LayoutInflater layoutInflater;
+    protected ListView mListView;
 
-    public ListMenuBaseAdapter(List<Menu> data, Context mContext) {
+    public ListMenuBaseAdapter(List<Menu> data,Context mContext) {
         this.data = data;
         this.mContext = mContext;
+        layoutInflater = LayoutInflater.from(mContext);
+    }
+
+    public ListMenuBaseAdapter(List<Menu> data, Context mContext, ListView mListView) {
+        this.data = data;
+        this.mContext = mContext;
+        this.mListView = mListView;
         layoutInflater = LayoutInflater.from(mContext);
     }
 

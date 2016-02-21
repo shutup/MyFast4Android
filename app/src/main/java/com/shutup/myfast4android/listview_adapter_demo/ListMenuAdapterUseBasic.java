@@ -17,7 +17,7 @@ public class ListMenuAdapterUseBasic extends ListMenuBaseAdapter {
 
 
     public ListMenuAdapterUseBasic(List<Menu> data, Context mContext) {
-        super(data, mContext);
+        super(data,mContext);
     }
 
     @Override
