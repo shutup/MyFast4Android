@@ -2,13 +2,21 @@
     <string name="app_name">MyFast4Android</string>
     <!-- MainActivity-->
     <string name="title_name">DemoList</string>
-    <!-- -->
+
+    <!-- ListViewAdapter-->
     <string name="listViewAdapterBasic">listViewAdapterBasic</string>
     <string name="listViewAdapterConvertView">listViewAdapterConvertView</string>
     <string name="listViewAdapterViewHolder">listViewAdapterViewHolder</string>
+
     <!-- CardViewDemo-->
     <string name="Radius">Radius</string>
     <string name="Elevation">Elevation</string>
     <string name="Alpha">Alpha</string>
     <string name="Background">Background</string>
+
+    <!-- ToastDemo-->
+    <string name="toastDemoNormalShort">toastDemoNormal_TimeShort</string>
+    <string name="toastDemoNormalLong">toastDemoNormal_TimeLong</string>
+    <string name="toastDemoWithPic">toastDemoWithPic</string>
+
 </resources>

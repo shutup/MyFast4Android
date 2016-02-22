@@ -14,6 +14,7 @@ import com.shutup.myfast4android.common.BaseActivity;
 import com.shutup.myfast4android.listview_adapter_demo.ListMenuAdapterUseViewHolder;
 import com.shutup.myfast4android.listview_adapter_demo.ListViewAdapterDemoActivity;
 import com.shutup.myfast4android.recycler_view.RecyclerViewDemoActivity;
+import com.shutup.myfast4android.toast_demo.ToastDemoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +41,7 @@ public class MainActivity extends BaseActivity {
         listMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "position:" + position +",id:" +id, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "position:" + position +",id:" +id, Toast.LENGTH_SHORT).show();
                 startActivity(data.get(position).getIntent());
             }
         });
@@ -52,6 +53,7 @@ public class MainActivity extends BaseActivity {
         data.add(new Menu("ListView Adapter Test", getJumpIntent(ListViewAdapterDemoActivity.class)));
         data.add(new Menu("RecyclerView Test", getJumpIntent(RecyclerViewDemoActivity.class)));
         data.add(new Menu("CardVew Test",getJumpIntent(CardViewDemoActivity.class)));
+        data.add(new Menu("Toast demo", getJumpIntent(ToastDemoActivity.class)));
     }
 
     @NonNull
