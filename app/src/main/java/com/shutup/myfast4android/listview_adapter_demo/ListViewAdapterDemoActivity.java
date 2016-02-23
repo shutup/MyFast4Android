@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.shutup.myfast4android.R;
+import com.shutup.myfast4android.common.BaseActivity;
 import com.shutup.myfast4android.main_menu.Menu;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ListViewAdapterDemoActivity extends AppCompatActivity {
+public class ListViewAdapterDemoActivity extends BaseActivity {
 
     @Bind(R.id.btnBasic)
     Button btnBasic;

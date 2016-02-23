@@ -9,6 +9,7 @@ import android.util.Log;
 
 import com.shutup.myfast4android.BuildConfig;
 import com.shutup.myfast4android.R;
+import com.shutup.myfast4android.common.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +17,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class RecyclerViewDemoActivity extends AppCompatActivity {
+public class RecyclerViewDemoActivity extends BaseActivity {
 
     @Bind(R.id.recyclerView)
     RecyclerView recyclerView;

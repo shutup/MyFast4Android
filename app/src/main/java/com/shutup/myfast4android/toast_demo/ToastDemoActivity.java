@@ -9,12 +9,15 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.shutup.myfast4android.R;
+import com.shutup.myfast4android.common.BaseActivity;
+
+import java.util.BitSet;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class ToastDemoActivity extends AppCompatActivity {
+public class ToastDemoActivity extends BaseActivity {
 
     @Bind(R.id.toast_with_pic)
     Button toastWithPic;

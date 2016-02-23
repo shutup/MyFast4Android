@@ -12,11 +12,12 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.shutup.myfast4android.R;
+import com.shutup.myfast4android.common.BaseActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class CardViewDemoActivity extends AppCompatActivity {
+public class CardViewDemoActivity extends BaseActivity {
 
     @Bind(R.id.radius_label)
     TextView radiusLabel;
