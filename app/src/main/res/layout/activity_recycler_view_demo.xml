@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/testColor"
+    android:fitsSystemWindows="true"
     tools:context="com.shutup.myfast4android.recycler_view.RecyclerViewDemoActivity">
 
     <android.support.v7.widget.RecyclerView
