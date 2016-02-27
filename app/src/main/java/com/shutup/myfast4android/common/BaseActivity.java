@@ -3,33 +3,46 @@ package com.shutup.myfast4android.common;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.ColorRes;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import com.shutup.myfast4android.R;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class BaseActivity extends AppCompatActivity {
+
+    LinearLayout rootLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 这句很关键，注意是调用父类的方法
+        super.setContentView(R.layout.activity_base);
         //set the status bar color
         setStatusBarColor(R.color.CustomeStatusBarColor);
+        //init toolbar
+        initToolbar();
     }
 
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);
-        overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
+        overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }
 
     @Override
     public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
         super.startActivityForResult(intent, requestCode, options);
-        overridePendingTransition(R.anim.push_right_in,R.anim.push_right_out);
+        overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }
 
     @Override
@@ -52,8 +65,7 @@ public class BaseActivity extends AppCompatActivity {
         win.setAttributes(winParams);
     }
 
-    public void setStatusBarColor(@ColorRes int color)
-    {
+    public void setStatusBarColor(@ColorRes int color) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             setTranslucentStatus(true);
         }
@@ -61,5 +73,25 @@ public class BaseActivity extends AppCompatActivity {
         SystemBarTintManager tintManager = new SystemBarTintManager(this);
         tintManager.setStatusBarTintEnabled(true);
         tintManager.setStatusBarTintResource(color);//通知栏所需颜色
+    }
+
+    private void initToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            setSupportActionBar(toolbar);
+        }
+    }
+
+    @Override
+    public void setContentView(int layoutId) {
+        setContentView(View.inflate(this, layoutId, null));
+    }
+
+    @Override
+    public void setContentView(View view) {
+        rootLayout = (LinearLayout) findViewById(R.id.root_layout);
+        if (rootLayout == null) return;
+        rootLayout.addView(view, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        initToolbar();
     }
 }

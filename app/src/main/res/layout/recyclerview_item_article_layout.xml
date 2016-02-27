@@ -4,7 +4,6 @@
     android:id="@+id/cv_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fitsSystemWindows="true"
     android:layout_margin="5dp"
     app:cardCornerRadius="10dp"
     app:contentPadding="2dp">
