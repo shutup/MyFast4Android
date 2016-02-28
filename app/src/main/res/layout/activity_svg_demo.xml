@@ -41,11 +41,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+            android:layout_marginRight="@dimen/edittext_drawable_padding"
             android:layout_gravity="center"
             android:src="@drawable/girl"
             android:layout_width="@dimen/imageview_size"
             android:layout_height="@dimen/imageview_size" />
         <EditText
+            android:background="@null"
             android:hint="@string/edittext_without_svg"
             android:drawablePadding="@dimen/edittext_drawable_padding"
             android:id="@+id/edittext_without_svg"
