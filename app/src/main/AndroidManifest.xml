@@ -19,7 +19,8 @@
         <activity android:name=".listview_adapter_demo.ListViewAdapterDemoActivity" />
         <activity android:name=".recycler_view.RecyclerViewDemoActivity" />
         <activity android:name=".cardview.CardViewDemoActivity" />
-        <activity android:name=".toast_demo.ToastDemoActivity"></activity>
+        <activity android:name=".toast_demo.ToastDemoActivity" />
+        <activity android:name=".svg_demo.SvgDemoActivity"></activity>
     </application>
 
 </manifest>

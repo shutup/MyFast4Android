@@ -7,4 +7,9 @@
     <dimen name="recyclerview_vertical_space">5dp</dimen>
 
     <dimen name="toolbar_padding_top">0dp</dimen>
+    <!-- svg demo -->
+    <dimen name="imageview_size">20dp</dimen>
+    <dimen name="edittext_drawable_size">20dp</dimen>
+    <dimen name="edittext_drawable_padding">10dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
 </resources>

@@ -6,7 +6,6 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.shutup.myfast4android.R;
 import com.shutup.myfast4android.cardview.CardViewDemoActivity;
@@ -14,6 +13,7 @@ import com.shutup.myfast4android.common.BaseActivity;
 import com.shutup.myfast4android.listview_adapter_demo.ListMenuAdapterUseViewHolder;
 import com.shutup.myfast4android.listview_adapter_demo.ListViewAdapterDemoActivity;
 import com.shutup.myfast4android.recycler_view.RecyclerViewDemoActivity;
+import com.shutup.myfast4android.svg_demo.SvgDemoActivity;
 import com.shutup.myfast4android.toast_demo.ToastDemoActivity;
 
 import java.util.ArrayList;
@@ -54,6 +54,7 @@ public class MainActivity extends BaseActivity {
         data.add(new Menu("RecyclerView Test", getJumpIntent(RecyclerViewDemoActivity.class)));
         data.add(new Menu("CardVew Test",getJumpIntent(CardViewDemoActivity.class)));
         data.add(new Menu("Toast demo", getJumpIntent(ToastDemoActivity.class)));
+        data.add(new Menu("svg demo", getJumpIntent(SvgDemoActivity.class)));
     }
 
     @NonNull

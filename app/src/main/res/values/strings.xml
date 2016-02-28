@@ -19,4 +19,9 @@
     <string name="toastDemoNormalLong">toastDemoNormal_TimeLong</string>
     <string name="toastDemoWithPic">toastDemoWithPic</string>
 
+    <!-- Svg Demo-->
+    <string name="textview_str">imageview with svg</string>
+    <string name="edittext_with_svg">the left drawable is drawable!</string>
+    <string name="edittext_without_svg">the left drawable is imageview!</string>
+
 </resources>
