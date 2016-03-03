@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.shutup.myfast4android.R;
+import com.shutup.myfast4android.back_key.ClickBackTwiceToLeaveActivity;
 import com.shutup.myfast4android.cardview.CardViewDemoActivity;
 import com.shutup.myfast4android.common.BaseActivity;
 import com.shutup.myfast4android.listview_adapter_demo.ListMenuAdapterUseViewHolder;
@@ -55,6 +56,7 @@ public class MainActivity extends BaseActivity {
         data.add(new Menu("CardVew Test",getJumpIntent(CardViewDemoActivity.class)));
         data.add(new Menu("Toast demo", getJumpIntent(ToastDemoActivity.class)));
         data.add(new Menu("svg demo", getJumpIntent(SvgDemoActivity.class)));
+        data.add(new Menu("click back key twice to leave",getJumpIntent(ClickBackTwiceToLeaveActivity.class)));
     }
 
     @NonNull
